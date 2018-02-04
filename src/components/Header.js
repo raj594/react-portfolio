@@ -14,13 +14,13 @@ export default class Header extends Component {
 			  </Navbar.Header>
 			  <Navbar.Collapse>
 			    <Nav pullRight>
-			      <NavItem eventKey={1} href="/">
+			      <NavItem eventKey={1} href={process.env.PUBLIC_URL + "/"}>
 			        About
 			      </NavItem>
-			      <NavItem eventKey={2} href="/portfolio">
+			      <NavItem eventKey={2} href={process.env.PUBLIC_URL + "/portfolio"}>
 			        Portfolio
 			      </NavItem>
-			      <NavItem eventKey={3} href="/contact">
+			      <NavItem eventKey={3} href={process.env.PUBLIC_URL + "/contact"}>
 			        Contact
 			      </NavItem>
 			    </Nav>
